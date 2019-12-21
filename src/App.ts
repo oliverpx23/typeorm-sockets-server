@@ -8,7 +8,7 @@ import * as SocketIO from 'socket.io';
 import * as mysockets from './sockets/socket';
 
 
-import UserController from './controllers/UsuariosController';
+import { controllers } from './classes/IndexControllers'
 
 
 class App {
@@ -79,11 +79,6 @@ class App {
 
     private initializeControllers() {
         // se inicializa la lista de controladores enviados en App.ts
-
-        const controllers = [
-            new UserController()
-        ];
-
         controllers.forEach((controller) => {
             this.app.use('/', controller.router);
         });

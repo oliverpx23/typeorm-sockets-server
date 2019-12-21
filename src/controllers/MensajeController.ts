@@ -1,7 +1,7 @@
 import * as express from 'express';
 import App from '../App';
 
-class UserController {
+class MensajeController {
 
     public path = '/usuarios';
     public router: express.Router = express.Router();
@@ -11,10 +11,7 @@ class UserController {
         this.initializeRoutes();
     }
 
-    public initializeRoutes() {
-        // Middlewares en caso de haber
-        // ...
-        
+    public initializeRoutes() {        
         // Endpoints 
         this.router.get(this.path, this.getAll);   //Enpoint GET a {APIURL}/usuarios
         this.router.get(this.path+'/:search', this.getAll);   //Enpoint GET a {APIURL}/usuarios/{search}
@@ -40,4 +37,4 @@ class UserController {
     }
 }
 
-export default UserController;
+export default MensajeController;
