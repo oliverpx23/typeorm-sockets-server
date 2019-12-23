@@ -3,7 +3,7 @@ import App from '../App';
 
 class MensajeController {
 
-    public path = '/usuarios';
+    public path = '/usuario';
     public router: express.Router = express.Router();
 
 

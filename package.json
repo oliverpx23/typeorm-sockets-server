@@ -1,5 +1,5 @@
 {
-  "name": "typeorm-socket-server",
+  "name": "turnerodigitalbackend",
   "version": "1.0.0",
   "description": "backend REST + Sockets",
   "main": "server.ts",
